@@ -1,34 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pharmacy System</title>
+    <title>Pharmacy Management System</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-<nav>
+<header class="navbar">
+    <h1> PharmaCare</h1>
+   <nav>
     <a href="index.html">Home</a>
-    <a href="table.html">Medicines</a>
-    <a href="form.html">Order</a>
+    <a href="medicine.html">Medicines</a>
+    <a href="order.html">Order</a>
     <a href="about.html">About</a>
 </nav>
 
-<h1>Welcome to Pharmacy Management System</h1>
+</header>
 
-<p>
-This website represents a simple Pharmacy Management System.
-It helps users view medicines, check prices, and place orders easily.
-</p>
+<section class="hero">
+    <h2>Advanced Pharmacy Management System</h2>
+    <p>Smart • Fast • Reliable Medicine Management</p>
+    <button onclick="window.location.href='explore.html'">
+    Explore System
+</button>
 
-<h3>Group Members</h3>
-<ul>
-    <li>MUHAMMAD IRZAM</li>
-    <li>MANSOOR AHADI</li>
-    <li>ABDUL RAHMAN</li>
-</ul>
+</section>
 
-<img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" 
-     alt="Pharmacy Image" width="200">
+<section class="features" id="features">
+    
+    <a href="vaccination.html" class="card-link">
+        <div class="card">
+            <h3>💉 Vaccinations</h3>
+            <p>Check the list of vaccines in stock.</p>
+        </div>
+    </a>
+
+    <a href="order.html" class="card-link">
+        <div class="card">
+            <h3>🧾 Easy Ordering</h3>
+            <p>Simple and fast medicine ordering system.</p>
+        </div>
+    </a>
+
+    <a href="medicine.html" class="card-link">
+        <div class="card">
+            <h3>📊 Smart Records</h3>
+            <p>Well-organized medicine and order data.</p>
+        </div>
+    </a>
+
+</section>
+
+
+<footer>
+    <p>© 2025 PharmaCare | Educational Project</p>
+</footer>
 
 </body>
 </html>
+
+<section class="feedback" id="feedback">
+    <h2> Customer Feedback</h2>
+
+    <form id="feedbackForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Feedback" rows="5" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <p id="successMsg"></p>
+</section>
+

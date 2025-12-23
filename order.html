@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Medicine</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <h1> PharmaCare</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="medicine.html">Medicines</a>
+        <a href="order.html">Order</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="container">
+    <h2>Medicine Order Form</h2>
+
+    <form action="order_process.php" method="POST">
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option value="">Select Medicine</option>
+            <option>Paracetamol</option>
+            <option>Ibuprofen</option>
+            <option>Aspirin</option>
+            <option>Panadol</option>
+            <option>Vitamin C</option>
+            <option>Vitamin D3</option>
+            <option>Calcium Tablets</option>
+            <option>Omeprazole</option>
+            <option>Ranitidine</option>
+            <option>ORS</option>
+            <option>Coldax</option>
+            <option>Benadryl</option>
+            <option>Vicks Vaporub</option>
+            <option>Amoxicillin</option>
+            <option>Ciprofloxacin</option>
+            <option>Azithromycin</option>
+            <option>Hydrocortisone Cream</option>
+            <option>Antiseptic Solution</option>
+            <option>Neosporin</option>
+            <option>Metformin</option>
+            <option>Insulin</option>
+            <option>Amlodipine</option>
+            <option>Atorvastatin</option>
+            <option>Sanitizer</option>
+            <option>Face Mask</option>
+        </select>
+
+        <input type="number" placeholder="Quantity" min="1" required>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <p id="successMsg"></p>
+</section>
+
+</body>
+</html>

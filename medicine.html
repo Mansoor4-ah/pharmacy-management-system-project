@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Inventory</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <h1> PharmaCare</h1>
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="medicine.html">Medicines</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+</nav>
+</header>
+
+<section class="container">
+    <h2>Available Medicines</h2>
+
+    <input type="text" id="search" placeholder="Search medicine..." onkeyup="searchMedicine()">
+
+    <table id="medicineTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type / Disease</th>
+            <th>Stock</th>
+            <th>Price (Rs)</th>
+        </tr>
+
+        <!-- Pain / Fever -->
+        <tr><td>1</td><td>Paracetamol</td><td>Pain / Fever</td><td>50</td><td>15</td></tr>
+        <tr><td>2</td><td>Ibuprofen</td><td>Pain / Fever</td><td>35</td><td>25</td></tr>
+        <tr><td>3</td><td>Aspirin</td><td>Pain / Fever</td><td>40</td><td>20</td></tr>
+        <tr><td>4</td><td>Panadol</td><td>Pain / Fever</td><td>30</td><td>10</td></tr>
+
+        <!-- Vitamins / Supplements -->
+        <tr><td>5</td><td>Vitamin C</td><td>Supplements</td><td>40</td><td>60</td></tr>
+        <tr><td>6</td><td>Vitamin D3</td><td>Supplements</td><td>25</td><td>80</td></tr>
+        <tr><td>7</td><td>Calcium Tablets</td><td>Supplements</td><td>20</td><td>50</td></tr>
+
+        <!-- Gastro / Stomach -->
+        <tr><td>8</td><td>Omeprazole</td><td>Stomach / Acidity</td><td>30</td><td>100</td></tr>
+        <tr><td>9</td><td>Ranitidine</td><td>Stomach / Acidity</td><td>25</td><td>90</td></tr>
+        <tr><td>10</td><td>ORS</td><td>Stomach / Hydration</td><td>25</td><td>60</td></tr>
+
+        <!-- Cold / Flu -->
+        <tr><td>11</td><td>Coldax</td><td>Cold / Flu</td><td>20</td><td>120</td></tr>
+        <tr><td>12</td><td>Benadryl</td><td>Cold / Flu</td><td>15</td><td>150</td></tr>
+        <tr><td>13</td><td>Vicks Vaporub</td><td>Cold / Flu</td><td>50</td><td>45</td></tr>
+
+        <!-- Infection / Antibiotics -->
+        <tr><td>14</td><td>Amoxicillin</td><td>Antibiotic</td><td>30</td><td>200</td></tr>
+        <tr><td>15</td><td>Ciprofloxacin</td><td>Antibiotic</td><td>20</td><td>250</td></tr>
+        <tr><td>16</td><td>Azithromycin</td><td>Antibiotic</td><td>25</td><td>220</td></tr>
+
+        <!-- Skin / External -->
+        <tr><td>17</td><td>Hydrocortisone Cream</td><td>Skin</td><td>40</td><td>180</td></tr>
+        <tr><td>18</td><td>Antiseptic Solution</td><td>Skin</td><td>50</td><td>90</td></tr>
+        <tr><td>19</td><td>Neosporin</td><td>Skin</td><td>30</td><td>150</td></tr>
+
+        <!-- Diabetes / Heart -->
+        <tr><td>20</td><td>Metformin</td><td>Diabetes</td><td>35</td><td>180</td></tr>
+        <tr><td>21</td><td>Insulin</td><td>Diabetes</td><td>20</td><td>500</td></tr>
+        <tr><td>22</td><td>Amlodipine</td><td>Heart / BP</td><td>25</td><td>150</td></tr>
+        <tr><td>23</td><td>Atorvastatin</td><td>Heart / Cholesterol</td><td>15</td><td>220</td></tr>
+
+        <!-- Others -->
+        <tr><td>24</td><td>Sanitizer</td><td>Hygiene</td><td>20</td><td>75</td></tr>
+        <tr><td>25</td><td>Face Mask</td><td>Hygiene</td><td>100</td><td>10</td></tr>
+
+    </table>
+</section>
+
+</body>
+</html>
